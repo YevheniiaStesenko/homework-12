@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "../css/normalize.css";
+
+.table td {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+}
+
+.float {
+    margin: auto;
+    padding: auto;
+}
+.float:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.flt li {
+    list-style: none;
+}
+.flt {
+    content: '';
+    clear: both;
+    display: block;
+}
+.flt li {
+    float: left;
+}
+.flt li:last-child {
+    margin-left: 18px;
+    margin-top: 25px;
+}
+.flt p {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+}
+
+.flex {
+    margin-top: 20px;
+}
+.namecard li{
+    list-style: none;
+    width: 200px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+}
+.namecard ul {
+    padding: 0px;
+    width: 150px;
+}
+.namecard {
+    display: flex;
+    align-items:inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+.namecard img {
+    margin-right: 18px;
+    margin-left: 20px;
+    width: 147px;
+    height: 150px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "avatar name" 
+                         "avatar job";
+    grid-template-columns: 200px 1fr;                     
+}
+.avatar {
+    grid-area: avatar;
+    margin-left: 20px;
+}
+.name {
+    grid-area: name;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 0px;
+}
+.job {
+    grid-area: job;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+    margin: 0px;
+}
